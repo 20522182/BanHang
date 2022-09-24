@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+           <!-- nav: tập hợp liên kết -->
+           <nav id="nav" class="container">
+            <!-- a#logo thêm logo -->
+            <a href="" id="logo1" >
+                <img src="logo.png" width="100px" alt="ChengShinTires">
+            </a>
+            <!-- ul#main-menu>li*8>a tạo menu 8 mục -->
+            <ul id="main-menu">
+                <li><a href="http://127.0.0.1:5500/BanHang.html">HOME</a></li>
+                <li><a href="">TIRES</a>
+                <!-- ul.sub-menu>li*4>a{menu 2.$} đổ cột xuống-->
+                <ul class="sub-menu">
+                    <li><a href="">Moto</a></li>
+                    <li><a href="">ATV</a></li>
+                    <li><a href="">Bike</a></li>
+                    <li><a href="">Industrial</a></li>
+                </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+            </ul> 
+            </nav>  
+        </div>
+        <table id="aboutimg" background=Aboutbikes.jpg ></table>
+        <div id="wp-content">
+            <div id="content">
+                <h2>ABOUT CST</h2>
+                
+                    <p>
+                        CST brand tires are offered by Cheng Shin Rubber Ind. Co. Ltd. (Cheng Shin Tire). 
+                        Employing more than 20,000 people, Cheng Shin Tire is the largest manufacturer of bicycle tires in the world and offers products in many other categories as well.
+                    </p>
+                    <P>
+                        Distributed in more than 150 countries, the CST brand covers a wide range of market segments. 
+                        CST products include tires and tubes for bicycles, motorcycles, all-terrain vehicles, autos, trucks, forklifts, agricultural and lawn and garden equipment.
+                    </P>
+                    <p>
+                        With facilities including three factories in Xiamen, China, CST’s operations boast world-class manufacturing equipment, innovative technology and a strong emphasis on quality, delivery and customer satisfaction.
+                        CST adheres to the most stringent international standards. The company has attained certificates and awards including DOT (US Department of Transportation) certification, ISO9001, E-Mark, TS 16949 and the China Well Known Brand Award.
+
+                    </p>
+                    <p>
+                        Utilizing a first-rate manufacturing operation and highly efficient logistics, CST sets the standard for excellence in the tire industry.
+                        At CST, quality, integrity and service are more than just words: They’re the foundation of the company from top management to the factory floor and beyond.
+                    </p>
+                    
+
+
+            </div>
+
+            <div id="sidebar">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1ioZXurqURI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="" id="logo">
+                <img src="https://www.csttires.com/int/wp-content/themes/cst-2016/assets/images/pumpy.png" width="25px" >
+            </a>
+            <span id="copyright"> &copy; CST. All Rights Reserved. </span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Tìm li có sub và thêm class has-child vào
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\main.css">
+    
+    <!-- thêm thư viện cho -> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <!-- nav: tập hợp liên kết -->
+            <nav id="nav" class="container">
+                <!-- a#logo thêm logo -->
+                <a href="" id="logo1" >
+                    <img src="logo.png" width="100px" alt="ChengShinTires">
+                </a>
+                <!-- ul#main-menu>li*8>a tạo menu 8 mục -->
+
+                <ul id="main-menu">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">TIRES</a>
+                    <!-- ul.sub-menu>li*4>a{menu 2.$} đổ cột xuống-->
+                    <ul class="sub-menu">
+                        <li><a href="">Moto</a></li>
+                        <li><a href="">ATV</a></li>
+                        <li><a href="">Bike</a></li>
+                        <li><a href="">Industrial</a></li>
+                    </ul>
+                    <li><a href="http://127.0.0.1:5500/About.html">ABOUT</a></li>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <iframe src="https://giphy.com/embed/P2eWuiV2AEpOyAJ0yJ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xbox-rocket-league-xbox-series-x-season-5-P2eWuiV2AEpOyAJ0yJ"></a></p>
+        </div>
+
+        <div id="wp-content">
+            <div id="content">
+                <h2>HOME</h2>
+                <p>
+                    CST brand tires are offered by Cheng Shin Rubber Ind. Co. Ltd. (Cheng Shin Tire).
+                    Employing more than 20,000 people, Cheng Shin Tire is the largest manufacturer of bicycle tires in the world and offers products in many other categories as well.
+                </p>
+                <a href="" id="img">
+                    <img src="BanHangImg.jpg" allow="accelerometer">
+                </a>
+            </div>
+
+            <div id="sidebar">
+                <h3 align="center">NEWS</h3>
+                <ul id="list">
+                    <li><a href="">TRANS BORNEO – MALAYSIA<br></a>October 1 - October 21<br><br></li>
+                    <li><a href="">KING OF PORTUGAL – PORTUGAL<br></a>October 6 - October 8<br><br></li>
+                    <li><a href="">BEACHRACE IJMUIDEN – NETHERLANDS<br></a>October 7 - October 9<br><br></li>
+                    <li><a href="">BORNEO SAFARI – MALAYSIA<br></a>October 25 - November 25<br><br></li>
+                    <li><a href="">RALLY HARDENBERG – NETHERLANDS<br></a>November 11 - November 13<br><br></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="" id="logo">
+                <img src="https://www.csttires.com/int/wp-content/themes/cst-2016/assets/images/pumpy.png" width="25px" >
+            </a>
+            <span id="copyright"> &copy; CST. All Rights Reserved. </span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Tìm li có sub và thêm class has-child vào
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+</html>
